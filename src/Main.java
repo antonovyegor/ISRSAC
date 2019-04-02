@@ -1,5 +1,3 @@
-import com.google.common.primitives.UnsignedInteger;
-
 import java.util.Scanner;
 
 public class Main {
@@ -93,8 +91,7 @@ public class Main {
         return  x;
     }
     public static long mod(long A , long e, long m){
-        UnsignedInteger e_ = UnsignedInteger.valueOf(e);
-        String strE = e_.toString(2);
+        String strE = Long.toString(e,2);
 
         long R=1;
 
